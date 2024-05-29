@@ -1,50 +1,51 @@
-<h1>JWipe - Disk Sanitization</h1>
+<h1>Cisco Packet Analysis project</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
-<h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+
+<h2>Description of tool</h2>
+Cisco Packet Analysis allow network administrators and engineers to simulate, monitor, and analyse network behaviour, aiding in the detection of issues, performance optimization, and security enforcement. By using Cisco Packet Tracer, users can create detailed network topologies, simulate various scenarios, and visualize data flow across the network. 
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Project Objective</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>Investigate Devices in a Wiring Closet</b> 
+- <b>Connect End Devices to Networking Devices</b>
+- <b>Install a Backup Router</b> 
+- <b>Configure a Hostname</b>
 
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b> (21H2)
 
 <h2>Program walk-through:</h2>
 
+
+
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Step 1: I began by navigating the city (Seward) and the Branch office, I needed to investigate the Branch Office wiring closet <br/>
+<img src="https://i.imgur.com/9g4KVoi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Step 2: Connected PC_1 FastEthernet0 to an empty FastEthernet port on ALS2 switch<br/>
+<img src="https://i.imgur.com/DqhdwfR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <br/>
+<img src="https://i.imgur.com/eUO22MY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Step 3: I tethered RS232 port on PC_1 to the Console port on the Edge_Router. Besides a console cable, a PC can also use a USB cable to connect to a newer networking device with a mini-USB port for configuration purposes  <br/>
+<img src="https://i.imgur.com/fcEVVjW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Step 4: I Installed Backup_Router in the Rack and turn the power on, connecting Laptop_1 to the Backup_Router with a USB cable  <br/>
+<img src="https://i.imgur.com/XlzUA0K.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br/>
+<img src="https://i.imgur.com/LThLgHo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Step 5: Here I configured the hostname on Backup_Router. After the hostname has been configured, the hostname appears as part of the IOS command prompt. The host name is used to identify a device when accessing its operating system for configuration.  <br/>
+<img src="https://i.imgur.com/SBfvOqF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <!--
